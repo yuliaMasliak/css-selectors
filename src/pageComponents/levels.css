@@ -1,0 +1,103 @@
+h3,
+span {
+  color: white;
+}
+input[type='checkbox'] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.container {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding-bottom: 5px;
+}
+.container input {
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark {
+  height: 25px;
+  width: 25px;
+}
+
+.checkmark:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+.container .checkmark:before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 15px;
+  border: 2px solid rgb(73, 80, 75);
+  border-left: none;
+  border-top: none;
+  box-sizing: border-box;
+  transform: rotate(45deg);
+}
+
+.container input:checked ~ .checkmark:before {
+  display: none;
+}
+.container .checkmark:after {
+  width: 10px;
+  height: 15px;
+  border: solid rgb(7, 156, 51);
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.with-hints {
+  color: white;
+}
+.withot-hint {
+  color: transparent;
+}
+.level-number {
+  margin-right: 5px;
+  cursor: pointer;
+  padding: 3px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background-color: #2e2a23;
+  color: white;
+  box-shadow: rgba(218, 176, 176, 0.623) 0px 1px 3px,
+    rgba(243, 218, 218, 0.527) 0px 1px 2px;
+}
+.levels {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.currrent-level {
+  background-color: rgb(114, 21, 21);
+  color: white;
+  box-shadow: rgba(218, 176, 176, 0.623) 0px 1px 3px,
+    rgba(243, 218, 218, 0.527) 0px 1px 2px;
+}
+
+@media only screen and (max-width: 968px) {
+  .with-hint {
+    display: block;
+  }
+}

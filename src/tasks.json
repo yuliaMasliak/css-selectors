@@ -1,0 +1,272 @@
+[
+  {
+    "level": 1,
+    "title": "Select the plates",
+    "content": [
+      { "tag": "plate", "anim": "animation" },
+      { "tag": "plate", "anim": "animation" }
+    ],
+    "answer": "plate"
+  },
+  {
+    "level": 2,
+    "title": "Select the bento boxes",
+    "content": [
+      { "tag": "bento", "anim": "animation" },
+      { "tag": "plate", "anim": "static" },
+      { "tag": "bento", "anim": "animation" }
+    ],
+    "answer": "bento"
+  },
+  {
+    "level": 3,
+    "title": "Select the fancy plate",
+    "content": [
+      { "tag": "plate", "anim": "animation", "options": "id=fancy" },
+      { "tag": "plate", "anim": "static" },
+      { "tag": "bento", "anim": "static" }
+    ],
+    "answer": "#fancy"
+  },
+  {
+    "level": 4,
+    "title": "Select the apple on the plate",
+    "content": [
+      { "tag": "bento", "anim": "static" },
+      {
+        "tag": "plate",
+        "anim": "static",
+        "dish": { "tag": "apple", "anim": "animation" }
+      },
+      { "tag": "apple", "anim": "static" }
+    ],
+    "answer": "plate apple"
+  },
+  {
+    "level": 5,
+    "title": "Select the pickle on the fancy plate",
+    "content": [
+      {
+        "tag": "bento",
+        "anim": "static",
+        "dish": { "tag": "orange", "anim": "static" }
+      },
+      {
+        "tag": "plate",
+        "anim": "static",
+        "options": "id=fancy",
+        "dish": { "tag": "pickle", "anim": "animation" }
+      },
+      {
+        "tag": "plate",
+        "anim": "static",
+        "dish": { "tag": "pickle", "anim": "static" }
+      }
+    ],
+    "answer": "#fancy pickle"
+  },
+  {
+    "level": 6,
+    "title": "Select the small apples",
+    "content": [
+      {
+        "tag": "apple",
+        "anim": "static"
+      },
+      {
+        "tag": "apple",
+        "anim": "animation",
+        "options": "class=small"
+      },
+      {
+        "tag": "plate",
+        "anim": "static",
+        "dish": {
+          "tag": "apple",
+          "anim": "animation",
+          "options": "class=small"
+        }
+      },
+      {
+        "tag": "plate",
+        "anim": "static"
+      }
+    ],
+    "answer": ".small"
+  },
+  {
+    "level": 7,
+    "title": "Select the small oranges",
+    "content": [
+      {
+        "tag": "apple",
+        "anim": "static"
+      },
+      {
+        "tag": "apple",
+        "anim": "static",
+        "options": "class=small"
+      },
+      {
+        "tag": "bento",
+        "anim": "static",
+        "dish": {
+          "tag": "orange",
+          "anim": "animation",
+          "options": "class=small"
+        }
+      },
+      {
+        "tag": "plate",
+        "anim": "static",
+        "dish": {
+          "tag": "orange",
+          "anim": "static"
+        }
+      },
+      {
+        "tag": "plate",
+        "anim": "static",
+        "dish": {
+          "tag": "orange",
+          "anim": "animation",
+          "options": "class=small"
+        }
+      }
+    ],
+    "answer": "orange.small"
+  },
+  {
+    "level": 8,
+    "title": "Select the small oranges in the bentos",
+    "content": [
+      {
+        "tag": "bento",
+        "anim": "static",
+        "dish": {
+          "tag": "orange",
+          "anim": "static"
+        }
+      },
+      {
+        "tag": "orange",
+        "anim": "static",
+        "options": "class=small"
+      },
+      {
+        "tag": "bento",
+        "anim": "static",
+        "dish": {
+          "tag": "orange",
+          "anim": "animation",
+          "options": "class=small"
+        }
+      },
+      {
+        "tag": "bento",
+        "anim": "static",
+        "dish": {
+          "tag": "apple",
+          "anim": "static",
+          "options": "class=small"
+        }
+      },
+      {
+        "tag": "bento",
+        "anim": "static",
+        "dish": {
+          "tag": "orange",
+          "anim": "animation",
+          "options": "class=small"
+        }
+      }
+    ],
+    "answer": "bento orange.small"
+  },
+  {
+    "level": 9,
+    "title": "Select all the plates and bentos",
+    "content": [
+      {
+        "tag": "pickle",
+        "anim": "static",
+        "options": "class=small"
+      },
+      {
+        "tag": "pickle",
+        "anim": "static"
+      },
+      {
+        "tag": "plate",
+        "anim": "animation",
+        "dish": {
+          "tag": "pickle",
+          "anim": "static"
+        }
+      },
+      {
+        "tag": "bento",
+        "anim": "animation",
+        "dish": {
+          "tag": "pickle",
+          "anim": "static"
+        }
+      },
+      {
+        "tag": "plate",
+        "anim": "animation",
+        "dish": {
+          "tag": "pickle",
+          "anim": "static"
+        }
+      },
+      {
+        "tag": "pickle",
+        "anim": "static"
+      },
+      {
+        "tag": "pickle",
+        "anim": "static",
+        "options": "class=small"
+      }
+    ],
+    "answer": "plate, bento"
+  },
+  {
+    "level": 10,
+    "title": "Select all the things!",
+    "content": [
+      {
+        "tag": "apple",
+        "anim": "animation"
+      },
+      {
+        "tag": "plate",
+        "anim": "animation",
+        "dish": {
+          "tag": "orange",
+          "anim": "animation",
+          "options": "class=small"
+        }
+      },
+      {
+        "tag": "bento",
+        "anim": "animation"
+      },
+      {
+        "tag": "bento",
+        "anim": "animation",
+        "dish": {
+          "tag": "orange",
+          "anim": "animation"
+        }
+      },
+      {
+        "tag": "plate",
+        "anim": "animation",
+        "options": "id=fancy"
+      }
+    ],
+    "answer": "*"
+  }
+]

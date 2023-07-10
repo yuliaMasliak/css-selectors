@@ -1,0 +1,157 @@
+.table {
+  display: flex;
+  column-gap: 10px;
+  box-shadow: 0 8px 6px -6px black;
+  border-radius: 5px;
+  background-color: rgb(208, 143, 39);
+  max-width: fit-content;
+  padding: 10px 30px;
+  margin: 0px auto;
+  position: relative;
+  height: fit-content;
+
+  align-items: center;
+  border-bottom-left-radius: 30%;
+  border-bottom-right-radius: 30%;
+  border-bottom: 10px solid rgb(165, 113, 30);
+}
+
+plate,
+bento,
+apple,
+pickle,
+orange,
+apple {
+  display: block;
+}
+
+my-plate,
+my-bento,
+my-apple,
+my-orange,
+my-pickle,
+small-apple,
+small-orange,
+small-pickle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.my-plate-on-table {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  border: 15px solid rgb(241, 241, 241);
+}
+.my-bento-on-table {
+  width: 70px;
+  height: 40px;
+  background-color: rgb(180, 37, 37);
+  border-radius: 2px;
+  border-top: 15px solid rgb(102, 19, 19);
+  border-bottom: 15px solid rgb(102, 19, 19);
+}
+.my-apple-on-table {
+  width: 50px;
+  height: 50px;
+  background-color: #ff0000;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+.small-apple-on-table {
+  width: 26px;
+  height: 26px;
+  background-color: #ff0000;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.my-apple-on-table:after,
+.small-apple-on-table:after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  background-color: #ff5f5f;
+  border-radius: 50%;
+  box-shadow: 0 0 5px #ff5f5f;
+}
+.my-orange-on-table {
+  width: 50px;
+  height: 50px;
+  background-color: #ffa500;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+.small-orange-on-table {
+  width: 26px;
+  height: 26px;
+  background-color: #ffa500;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+.my-orange-on-table:after,
+.small-my-orange-on-table:after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 60%;
+  transform: translateX(-20%);
+  width: 30px;
+  height: 20px;
+  background-color: #ffb45f;
+  border-radius: 50%;
+  box-shadow: 0 0 5px #ffe75f;
+}
+.my-pickle-on-table {
+  width: 20px;
+  height: 50px;
+  background-color: #609120;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.small-pickle-on-table {
+  width: 12px;
+  height: 28px;
+  background-color: #609120;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+.hovered-on-table {
+  box-shadow: rgba(13, 164, 190, 0.836) 0px 2px 4px 0px,
+    rgba(145, 216, 247, 0.822) 0px 2px 16px 0px;
+}
+.hovered-text {
+  color: white;
+  font-weight: 400;
+}
+h2 {
+  color: #a3a0a0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 640px) {
+  .table {
+    padding-left: 3px;
+    padding-right: 3px;
+    margin-bottom: 10px;
+  }
+}

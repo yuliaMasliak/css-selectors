@@ -1,0 +1,106 @@
+.task-block {
+  background-color: rgba(71, 56, 85, 0.459);
+  height: 100%;
+  display: flex;
+}
+.task-board {
+  width: 80%;
+  text-align: center;
+  background-color: #2e2a23;
+  color: #6d6a65;
+  padding-top: 30px;
+}
+h3 {
+  margin-bottom: 5px;
+}
+.task-description {
+  background-color: #1b1813;
+  color: #6d6a65;
+  width: 20%;
+  min-height: 100vh;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  align-items: center;
+}
+.base-buttons {
+  display: inline-block;
+  outline: 0;
+  text-align: center;
+  cursor: pointer;
+  height: 34px;
+  padding: 0 13px;
+  vertical-align: top;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  background: #fff;
+  border-color: #e8e8e8;
+  color: #000;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 16px;
+  font-size: 11px;
+  margin-right: 20px;
+}
+
+/* CSS */
+.base-buttons {
+  align-items: center;
+  background-color: initial;
+  background-image: linear-gradient(#464d55, #25292e);
+  border-radius: 8px;
+  border-width: 0;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  flex-direction: column;
+  font-family: expo-brand-demi, system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-size: 18px;
+  height: 52px;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  overflow: hidden;
+  padding: 0 32px;
+  text-align: center;
+  text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  transition: all 150ms;
+  vertical-align: baseline;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.base-buttons:hover {
+  box-shadow: rgba(0, 1, 0, 0.2) 0 2px 8px;
+  opacity: 0.85;
+}
+
+.base-buttons:active {
+  outline: 0;
+}
+
+.base-buttons:focus {
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 0 3px;
+}
+
+.table-container {
+  height: 260px;
+}
+
+@media only screen and (max-width: 968px) {
+  .base-buttons {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 0.8rem;
+  }
+}

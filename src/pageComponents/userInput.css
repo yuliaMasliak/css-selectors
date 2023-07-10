@@ -1,0 +1,88 @@
+.user-code-block {
+  min-height: 320px;
+  width: 85%;
+  margin: 0px auto;
+  background-color: rgba(3, 0, 5, 0.459);
+  padding: 3px;
+  padding-top: 1px;
+  display: flex;
+  column-gap: 3px;
+  text-align: left;
+}
+.css-block {
+  background-color: rgba(245, 238, 250, 0.842);
+  width: 50%;
+}
+.html-block {
+  width: 50%;
+  background-color: rgb(32, 29, 24);
+  color: rgb(121, 112, 112);
+}
+
+.user-input-block {
+  margin: 5px;
+}
+.user-input {
+  border: none;
+  background-color: transparent;
+  font-size: 1.2rem;
+  width: 100%;
+  resize: none;
+}
+.user-input-block button {
+  display: block;
+  outline: 0;
+  text-align: center;
+  cursor: pointer;
+  height: 34px;
+  padding: 0 13px;
+  float: right;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  background: #fff;
+  border-color: #e8e8e8;
+  color: #000;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 16px;
+  font-size: 11px;
+}
+.user-input-block button:hover {
+  background: #e8e8e8;
+  color: #3d3d3d;
+}
+
+.user-input-block button:focus {
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
+}
+.user-input:focus {
+  outline: none;
+  content: '';
+}
+
+.title {
+  height: 40px;
+  background-color: rgb(39, 36, 30);
+  color: rgb(212, 199, 199);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.html-output {
+  white-space: pre;
+}
+.dimmed {
+  color: rgba(80, 88, 78, 0.514);
+}
+
+@media only screen and (max-width: 968px) {
+  .user-code-block {
+    flex-direction: column;
+  }
+  .html-block,
+  .css-block {
+    width: 100%;
+    min-height: 200px;
+  }
+}
